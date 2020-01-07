@@ -1,0 +1,24 @@
+#Revealing Module Pattern
+
+Javascript does not have the typical 'private' and 'public' specifiers of more traditional object oriented languages like C# or Java. However, you can achieve the same effect through the clever application of Javascript's function-level scoping. The Revealing Module pattern is a design pattern for Javascript applications that elegantly solves this problem.
+
+The central principle of the Revealing Module pattern is that all functionality and variables should be hidden unless deliberately exposed.
+
+###To use the module:
+```js
+window.revealingModule.doSomething();
+window.revealingModule.init();
+window.revealingModule.doSomething();
+```
+
+####Output:
+```
+doSomething function called
+Call init method first
+value in _store.someThing:
+
+init function called
+
+doSomething function called
+value in _store.someThing:  value of something
+```
