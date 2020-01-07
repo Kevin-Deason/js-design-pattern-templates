@@ -1,3 +1,17 @@
+/*!
+ * revealing module pattern template
+ *
+ * Version: 1.0.0
+ *
+ * Author: Kevin Deason
+ *
+ * Licensed under
+ *   MIT
+ *
+ * Dependencies
+ *     None
+ */
+
 (function (win, doc) {
     var revealingModule = (function () {
         //Private variables - these should not be exposed directly
